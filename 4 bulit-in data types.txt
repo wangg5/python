@@ -1,0 +1,44 @@
+                                        sequence
+                                           |
+                                   --------------------------------------
+                                   |                                    |
+set                               tuple                                list                            dict
+
+s = set()                         tp = ()
+                                  tp = tuple()
+                                  tp = 1,2,3 # () is not mandated
+
+unordered                         ordered                              ordered
+unchangeable(immutable)           unchangeable                         changeable
+duplicated not allowed            allow duplicates                     allow duplicates
+using {}                          using ()                             using []
+using , separate elements         using , separate elements            using , separate elements
+
+operators:                               both tuple and list have
+    |, -, &, ^                           s1 + s2
+    !=, ==, <, <=, >, >=                 s*n or n*s:w
+                                         s[i], s[i:j], s[i:j:k]
+
+10  methods:                             7 methods:                    (7+12) methods 
+    x in s                               x in s
+    x not in s                           x not in s
+    len(s)                               len(s)
+                                         min(s)
+                                         max(s)
+                                         s.index(x), s.index(x, i, j)
+                                         s.count()
+    s.copy()                                                          s.copy()
+    s.pop()                                                           s.pop(i)
+    s.clear()                                                         s.clear()
+    s.remove(x)                                                       s.remove(x)
+                                                                      s.reverse()
+                                                                      s.index(x)
+                                                                      s.append(x)
+                                                                      s.extend(x)
+                                                                      s.insert(index, x)
+                                                                      del s[i] or s[i:j:k]
+                                                                      s[i] = x
+                                                                      s[i:j:k] = lt # replace by another list
+    s.discard(x)
+    s.add(x)
+    s = set(x)

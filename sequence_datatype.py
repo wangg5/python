@@ -83,7 +83,7 @@ creature = 'cat', 'dog', 'tiger', 'human'
 print('creature[::-1] = ', creature[::-1]) # ('human', 'tiger', 'dog', 'cat'). create a new tuple, the original one is not changed.
 print("creature = ", creature)  # ('cat', 'dog', 'tiger', 'human')
 
-color = (1100, 'blue', creature)
+color = (0x001100, 'blue', creature)
 print(color[-1][2])  # [-1] is creature, [2] is 'tiger'
 print(color[-1][2][2]) # continue to character 'g'
 
