@@ -91,6 +91,12 @@ print("mySet = ", mySet)
 
 """
 
+"""    For sets, we cannot do this:
+        
+        s = s1 + s2
+
+"""
+
 
 
 
