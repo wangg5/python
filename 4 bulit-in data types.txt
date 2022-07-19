@@ -4,9 +4,9 @@
                                    |                                    |
 set                               tuple                                list                            dict
 
-s = set()                         tp = ()
-                                  tp = tuple()
-                                  tp = 1,2,3 # () is not mandated
+s = set()                         tp = ()                              ls = []
+                                  tp = tuple()                         ls = list()
+                                  tp = 1,2,3 # () is not mandated      ls = [1,2,3]
 
 unordered                         ordered                              ordered
 unchangeable(immutable)           unchangeable                         changeable
@@ -19,7 +19,7 @@ operators:                               both tuple and list have
     !=, ==, <, <=, >, >=                 s*n or n*s:w
                                          s[i], s[i:j], s[i:j:k]
 
-10  methods:                             7 methods:                    (7+12) methods 
+10  methods:                             7+1 methods:                    (7+1+12) methods: 
     x in s                               x in s
     x not in s                           x not in s
     len(s)                               len(s)
@@ -41,4 +41,5 @@ operators:                               both tuple and list have
                                                                       s[i:j:k] = lt # replace by another list
     s.discard(x)
     s.add(x)
-    s = set(x)
+    s = set(x)                           tp = tuple(x)                ls = list(x)
+                                              The last methods are all convert another type to its type.
