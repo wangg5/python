@@ -37,7 +37,7 @@ myFunc(10, 'a', 'b', 'c')
 print()
 # **kwargs
 def myFunc(a, **kwargs):
-    print("**kwargs")
+    print("**kwargs. It is a dic")
     print("a= ", a)
     for key, value in kwargs.items():
         print("key = ", key)
