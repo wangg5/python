@@ -41,11 +41,11 @@ print("mySet = ", mySet)
 mySet = set([1,1,3,3,"helloo", (10, 10, 100)])
 print("mySet = ", mySet)
 
-"""   error
+"""   error, dict cannot coexist with other datatype
 mySet = set([1,2,2, {"name":"Jason", "age":12}])
 print("mySet = ", mySet)
 """
-# discard "systers"'s value
+# discard key's value
 # mySet = {"name", "age", "sisters"}
 mySet = set({"name":"Jason", "age":12, "sisters":["Amber", "Jen", "Ruby","Jen"]})
 print("mySet = ", mySet)
