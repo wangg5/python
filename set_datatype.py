@@ -19,6 +19,14 @@ print("empty set s = ", s)  # empty set s = set()
 s = {123, "python", (1,3)}
 for item in s:
     print(item)
+"""
+# we also cannot put a set inside another set
+s1 = {1,2,3}
+s = {2}
+s.add(s1) # this is wrong. 
+# but we can do union.
+s = s|s1
+"""
 
 # ---------------------- convert to set -------------------------------
 mySet = set([1,1,2,2,3])
