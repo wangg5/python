@@ -19,7 +19,7 @@ operators:                               both tuple and list have
     !=, ==, <, <=, >, >=                 s*n or n*s:w
                                          s[i], s[i:j], s[i:j:k]
 
-10  methods:                             7+1 methods:                    (7+1+12) methods: 
+10  methods:                             7+1 methods:                    (7+1+11) methods: 
     x in s                               x in s
     x not in s                           x not in s
     len(s)                               len(s)
@@ -32,7 +32,6 @@ operators:                               both tuple and list have
     s.clear()                                                         s.clear()
     s.remove(x)                                                       s.remove(x)
                                                                       s.reverse()
-                                                                      s.index(x)
                                                                       s.append(x)
                                                                       s.extend(x)
                                                                       s.insert(index, x)
@@ -43,3 +42,4 @@ operators:                               both tuple and list have
     s.add(x)
     s = set(x)                           tp = tuple(x)                ls = list(x)
                                               The last methods are all convert another type to its type.
+:

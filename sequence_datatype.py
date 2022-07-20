@@ -118,6 +118,7 @@ i = 3, item = human
     ls.append(x)    ------ update ls, append x to ls. x as a whole add to ls.
     ls.extend(x)    ------ update ls, if x is a list, every element appends to ls.
     ls.index(x)     ------ index of x in ls.
+    ls.index(x,i,j) ------ index of x from ith position to jth position.
     ls.clear()      ------ remove all elements in ls.
     ls.pop()        ------ using list as a stack. remove the last element of ls.
     ls.pop(0)       ------ using list as a queue. remove the first element of ls.
