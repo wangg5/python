@@ -2,44 +2,50 @@
                                            |
                                    --------------------------------------
                                    |                                    |
-set                               tuple                                list                            dict
+set                               tuple                                list                                        dict
 
-s = set()                         tp = ()                              ls = []
-                                  tp = tuple()                         ls = list()
-                                  tp = 1,2,3 # () is not mandated      ls = [1,2,3]
+s = set()                         tp = ()                              ls = []                                     d = {}
+                                  tp = tuple()                         ls = list()                                 d = dict([(tuple_item1, tuple_item2), (..), ...])
+                                  tp = 1,2,3 # () is not mandated      ls = [1,2,3]                                d = {"key":"value"}
 
-unordered                         ordered                              ordered
-unchangeable(immutable)           unchangeable                         changeable
-duplicated not allowed            allow duplicates                     allow duplicates
-using {}                          using ()                             using []
-using , separate elements         using , separate elements            using , separate elements
+unordered                         ordered                              ordered                                     after python3.7 ordered, before unordered
+unchangeable(immutable)           unchangeable                         changeable                                  changeable
+duplicates not allowed            allow duplicates                     allow duplicates                            duplicates not allowed
+using {}                          using ()                             using []                                    using {}
+using , separate elements         using , separate elements            using , separate elements                   {"key1":"value1", "key2":"value2", ...}
 
-operators:                               both tuple and list have
+operators:                               both tuple and list have                                                  operators:   None
     |, -, &, ^                           s1 + s2
     !=, ==, <, <=, >, >=                 s*n or n*s:w
                                          s[i], s[i:j], s[i:j:k]
 
-10  methods:                             7+1 methods:                    (7+1+11) methods: 
-    x in s                               x in s
-    x not in s                           x not in s
-    len(s)                               len(s)
+10  methods:                             7+1 methods:                    (7+1+11) methods:                         13+1 methods:
+    x in s                               x in s                                                                    key in d
+    x not in s                           x not in s                                                                key not in d
+    len(s)                               len(s)                                                                    len(d)
                                          min(s)
                                          max(s)
                                          s.index(x), s.index(x, i, j)
                                          s.count()
-    s.copy()                                                          s.copy()
-    s.pop()                                                           s.pop(i)
-    s.clear()                                                         s.clear()
+    s.copy()                                                          s.copy()                                     d.copy()
+    s.pop()                                                           s.pop(i)                                     d.pop()
+    s.clear()                                                         s.clear()                                    d.clear()
     s.remove(x)                                                       s.remove(x)
                                                                       s.reverse()
                                                                       s.append(x)
                                                                       s.extend(x)
                                                                       s.insert(index, x)
-                                                                      del s[i] or s[i:j:k]
+                                                                      del s[i] or s[i:j:k]                         del d["key"]
                                                                       s[i] = x
                                                                       s[i:j:k] = lt # replace by another list
+                                                                                                                   d.popitem()
+                                                                                                                   d.get("key", default)
+                                                                                                                   d.update({"key":"value"})
+                                                                                                                   d.keys()
+                                                                                                                   d.values()
+                                                                                                                   d.items()
     s.discard(x)
     s.add(x)
-    s = set(x)                           tp = tuple(x)                ls = list(x)
+    s = set(x)                           tp = tuple(x)                ls = list(x)                                 d = dict([(), (),...])
                                               The last methods are all convert another type to its type.
 :
