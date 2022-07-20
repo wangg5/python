@@ -7,6 +7,8 @@
     changeable
     duplicates not allowed
 
+***** dict data type cannot do d1+d2 or d1*n******
+
 """
 # --------------- create a dict  ----------------
 #d = {}   
