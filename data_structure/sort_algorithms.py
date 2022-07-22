@@ -1,4 +1,4 @@
-# sort algorithms  ---- quick sort, merge sort, ...
+# sort algorithms  ---- insertion sort, selection sort, merge sort, quick sort, least significant digit radix sort, counting sort
 
 """
 insertion sort
