@@ -1,4 +1,13 @@
-# Binary Search Tree
+""" Binary Search Tree
+
+BST: a binary tree, in which:
+    * -all values in left are < value
+    * -all values in right are > value
+    * -left and right are BSTs 
+
+    duplicates not allowed.
+"""
+
 class TreeNode:
     def __init__(self, val):
         self.val = val
