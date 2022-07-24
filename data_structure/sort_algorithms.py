@@ -1,4 +1,4 @@
-# sort algorithms  ---- insertion sort, selection sort, merge sort, quick sort, least significant digit radix sort, counting sort
+# sort algorithms  ---- insertion sort, selection sort, merge sort, quick sort, least significant digit radix sort, counting sort, heap sort(O(nlgn) and in place)
 
 """
 insertion sort
